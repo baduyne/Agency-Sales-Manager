@@ -9,8 +9,8 @@ A **web-based system** for managing sales operations across multiple agencies or
 
 | Layer       | Technology            |
 |-------------|------------------------|
-| Frontend    | HTML/CSS, JavaScript,  |
-| Backend     | Node.js    |
+| Frontend    | HTML,CSS, JavaScript  |
+| Backend     | Node.js, Express.js  |
 | Database    | MySQL        |
 | Dev Tools   | nodemon, Git   |
 
