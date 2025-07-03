@@ -1,0 +1,185 @@
+/* #container #receipt-content {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  margin-left: 15%;
+  height: 100vh;
+}
+
+#container #receipt-content .receipt_lable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 23px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+#container #receipt-content .box-input {
+  height: 80%;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+  font-size: 23px;
+}
+
+#receipt-content .box-input ul {
+  padding: 0;
+  margin: 5px 40px;
+  list-style-type: none;
+  text-align: left;
+  position: absolute;
+}
+
+#receipt-content .box-input .lable_input li {
+  padding: 20px;
+}
+
+#receipt-content .box-input .input_content {
+  position: relative;
+  top: 0px;
+  left: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#receipt-content .box-input .input_content input {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  padding: 9px;
+  margin: 16px;
+}
+
+#receipt-content .input_content input[type="text"],
+#receipt-content .input_content input[type="number"] {
+  width: 60%;
+}
+
+#receipt-content .input_content input[type="date"] {
+  width: 12%;
+}
+
+#receipt-content .input_content li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#receipt-content .box-input .create_receipt {
+  width: 150px;
+  height: 35px;
+  position: absolute;
+  border-radius: 5px;
+  margin: 20px;
+  font-weight: bold;
+  bottom: 0px;
+  left: 45%;
+  transform: translateX(-50%);
+}
+
+#receipt-content .box-input .create_receipt:hover {
+  background-color: red;
+} */
+
+.receipt_label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: white;
+  margin: 23px;
+  padding: 40px 0 40px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+.box-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  margin: 23px;
+  padding: 50px 80px 50px 80px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+ul {
+  list-style: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+}
+
+.label_input {
+  margin-right: 50px;
+}
+
+.label_input li {
+  margin-top: 30px;
+}
+
+.label_input li p {
+  font-size: 30px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.input_content {
+  width: 60%;
+}
+
+.input_content li {
+  margin-top: 30px;
+  height: 50px;
+}
+
+.input_content li input,
+.input_content li select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #9f9f9f;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.create_receipt {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(81, 81, 81);
+  color: white;
+  font-size: 15px;
+}
+
+.create_receipt:hover {
+  background-color: gray;
+  cursor: pointer;
+}

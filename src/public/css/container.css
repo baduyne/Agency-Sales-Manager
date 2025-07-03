@@ -1,0 +1,81 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-top: 60px;
+}
+
+#container #sidebar {
+  position: fixed;
+  top: 60px;
+  overflow: auto;
+  z-index: 1;
+  background-color: white;
+  width: 15%;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+#container .content-page {
+  width: 85%;
+  margin-left: 15%;
+}
+
+#sidebar i {
+  margin-right: 5px;
+}
+
+#container #sidebar li {
+  height: auto;
+  min-height: 53px;
+  position: relative;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 10px;
+  overflow: hidden;
+  transition: color 0.1s;
+}
+
+#container #sidebar li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: rgb(255, 198, 151);
+  transition: width 0.25s ease;
+  z-index: -1;
+}
+
+#container #sidebar li:hover {
+  cursor: pointer;
+}
+
+#container #sidebar li:hover::before {
+  width: 97%;
+}
+
+.ti-home,
+.ti-search,
+.ti-save,
+.ti-share,
+.ti-money,
+.ti-image,
+.ti-settings {
+  font-size: 1.2em;
+  text-shadow: 0.2px 0 0 #000, -0.2px 0 0 #000, 0 0.2px 0 #000, 0 -0.2px 0 #000,
+    0.2px 0.5px 0 #000, -0.2px -0.2px 0 #000, 0.2px -0.2px 0 #000,
+    -0.2px 0.2px 0 #000;
+  color: #000;
+}
+
+.page-focus {
+  background-color: rgb(255, 198, 151);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 97%;
+}

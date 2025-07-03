@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+body {
+  height: 100vh;
+  /* min-height: 780px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  min-height: 780px;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.container {
+  margin-top: -15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 650px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-banner {
+  background-color: gray;
+  height: 100%;
+  width: 45%;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.img-banner h1 {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/loginPage/banner.webp") center/cover no-repeat;
+  color: white;
+  text-transform: uppercase;
+  font: bold 100px/1.4 sans-serif;
+  padding: 30px 0 0 40px;
+  border-radius: 15px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#login-form,
+#register-form,
+#forget-password-form {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-form {
+  margin-top: 50px;
+}
+
+.header-form h1 {
+  background: linear-gradient(to left, #ff914d, #ff3131);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.form-group {
+  width: 80%;
+}
+
+.form-group label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  height: 100%;
+}
+
+.form-group label p {
+  color: #a4a5a5;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.form-group label input {
+  font-size: 15px;
+  height: 50px;
+  margin-top: 10px;
+  padding-left: 20px;
+  border-color: #a4a5a5;
+  border-radius: 7px;
+  background-color: aliceblue;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px;
+  width: 80%;
+  margin-top: 55px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  background: linear-gradient(to left, #ff914d, #ff3131);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #ff8f76;
+}
+
+.forget-password,
+.create-account,
+.have-account {
+  width: 80%;
+}
+
+.forget-password {
+  margin-top: 60px;
+}
+
+.create-account,
+.have-account {
+  margin-top: 20px;
+  display: inline-flex;
+}
+
+.create-account p,
+.have-account p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #a4a5a5;
+}
+
+.link {
+  color: #ff6340;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.link:hover {
+  color: #ff8f76;
+}

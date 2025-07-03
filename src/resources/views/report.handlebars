@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="css/report.css" />
+
+<div id="report-content" class="content-page">
+  <div class="report-page-header">
+    <h1 class="heading">Lập báo cáo tháng</h1>
+
+    <div class="time-create">
+      <label>
+        <p>Tháng:</p>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="type-report">
+      <p>Loại báo cáo: </p>
+      <select class="type">
+        <option value="" disabled selected></option>
+        <option value="revenue">Báo cáo doanh thu</option>
+        <option value="debt">Báo cáo công nợ</option>
+      </select>
+    </div>
+
+    <div class="btn-report-page">
+      <button class="btn-report-writing">Lập báo cáo</button>
+    </div>
+  </div>
+  <div class="report-page-content">
+    <div class="report hidden">
+      <div class="download">
+        <button class="btn-download">Tải xuống</button>
+      </div>
+      <div class="revenue-table hidden">
+        <h1>Báo cáo doanh thu</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Đại lý</th>
+              <th>Số phiếu xuất</th>
+              <th>Tổng giá trị</th>
+              <th>Tỉ lệ</th>
+            </tr>
+          </thead>
+          <tbody class="revenue-body"></tbody>
+        </table>
+      </div>
+      <div class="debt-table hidden">
+        <h1>Báo cáo công nợ</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Đại lý</th>
+              <th>Nợ đầu</th>
+              <th>Phát sinh</th>
+              <th>Nợ cuối</th>
+            </tr>
+          </thead>
+          <tbody class="debt-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+</div>
+
+<script src="js/report.js"></script>

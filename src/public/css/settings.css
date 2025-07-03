@@ -1,0 +1,135 @@
+#container #settings-content .setting-page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  margin: 23px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+.setting-page-content {
+  height: auto;
+  min-height: 50%;
+  margin: 25px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-content,
+.right-content {
+  height: auto;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.item-header {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-header h1 {
+  display: inline-block;
+  font-size: 25px;
+  position: relative;
+}
+
+.item-header h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background-color: orange;
+  border-radius: 50px;
+}
+
+li,
+label,
+button {
+  font-weight: bold;
+}
+
+.item ul,
+.item .maximum {
+  margin-top: 50px;
+  width: 80%;
+}
+
+.type li,
+.item .maximum {
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.type a {
+  margin-left: 50px;
+  margin-right: -10px;
+}
+
+.type input,
+.maximum input {
+  width: 100px;
+  height: 35px;
+  border-radius: 6px;
+  margin-left: 100px;
+  background-color: whitesmoke;
+}
+
+.item .insert,
+.item .edit,
+.item .cancel,
+.item .save {
+  width: 80%;
+}
+
+.item button {
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(131, 131, 131);
+  color: white;
+  font-size: 15px;
+}
+
+.item input {
+  padding-left: 20px;
+}
+
+.item button:hover {
+  background-color: rgb(179, 179, 179);
+  cursor: pointer;
+}

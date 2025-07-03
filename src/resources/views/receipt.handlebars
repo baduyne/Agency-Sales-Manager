@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="css/receipt.css" />
+
+<div id="receipt-content" class="content-page">
+  <h2 class="receipt_label">Phiếu Thu Tiền</h2>
+  <div class="box-input">
+    <!-- phần nhập dữ liệu -->
+    <div class="field">
+      <ul class="label_input">
+        <li>
+          <p>Tên đại lý</p>
+        </li>
+        <li>
+          <p>Địa chỉ (quận)</p>
+        </li>
+        <li>
+          <p>Điện thoại</p>
+        </li>
+        <li>
+          <p>Email</p>
+        </li>
+        <li>
+          <p>Ngày thu tiền</p>
+        </li>
+        <li>
+          <p>Số tiền thu</p>
+        </li>
+      </ul>
+
+      <!-- Nhập dữ liệu  -->
+      <ul class="input_content">
+        <li>
+          <select name="store" class="name">
+            <option value="" disabled selected></option>
+            {{#each stores}}
+              <option value="{{TenDaiLy}}">{{TenDaiLy}}</option>
+            {{/each}}
+          </select>
+        </li>
+        <li>
+          <input type="text" name="input_address" disabled />
+        </li>
+        <li>
+          <input type="text" name="input_phone" disabled />
+        </li>
+        <li>
+          <input type="email" name="input_email" disabled />
+        </li>
+        <li>
+          <input type="date" name="input_date" disabled />
+        </li>
+        <li>
+          <input type="number" name="input_price" />
+        </li>
+      </ul>
+    </div>
+    <div class="btn">
+      <button class="create_receipt" onclick="createReceipt()">
+        Lập phiếu
+      </button>
+    </div>
+  </div>
+  <div class="space"></div>
+</div>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"
+></script>
+<script src="js/receipt.js"></script>
+<div class="space"></div>

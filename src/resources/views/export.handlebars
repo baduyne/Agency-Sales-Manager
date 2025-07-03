@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="css/export.css" />
+
+<div id="export-content" class="content-page">
+  <p class="export-title">Phiếu Xuất Hàng</p>
+
+  <div class="main-export">
+    <div class="header-export">
+      <div class="input-store">
+        <span class="name-input">Chọn đại lý</span>
+        <select name="store" id="store-select">
+          <option value="" disabled selected></option>
+          {{#each stores}}
+            <option value="{{MaDaiLy}}">{{TenDaiLy}}</option>
+          {{/each}}
+        </select>
+      </div>
+      <div class="date-export">
+        <span>Ngày lập phiếu</span>
+        <input type="date" id="date-export" disabled="true" />
+      </div>
+    </div>
+
+    <div class="content-export">
+      <div class="btn-export-main">
+        <button id="add-item-btn">Thêm mặt hàng</button>
+        <button id="export-btn">Xuất Phiếu</button>
+      </div>
+
+      <div class="table-export">
+        <table id="export-table" border="1">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Mặt hàng</th>
+              <th>Đơn vị tính</th>
+              <th>Số lượng</th>
+              <th>Đơn giá</th>
+              <th>Thành tiền</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div id="message-box" class="message-box hidden">
+        Chưa thêm mặt hàng!
+      </div>
+    </div>
+  </div>
+</div>
+<div class="space"></div>
+
+<script src="js/export.js"></script>

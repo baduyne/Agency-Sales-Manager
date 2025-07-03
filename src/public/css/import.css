@@ -1,0 +1,119 @@
+.import-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-weight: bold;
+  background-color: white;
+  margin: 23px;
+  padding: 20px 0 10px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+.import-page-container {
+  height: auto;
+  min-height: 50%;
+  background-color: white;
+  margin: 25px;
+  padding: 50px 80px 50px 80px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+.import-name {
+  font-size: 27px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  width: 80%;
+}
+
+#container #import-content {
+  position: absolute;
+  right: 0;
+  width: 85%;
+  height: 100vh;
+}
+
+#import-content .import-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.css-all-container {
+  width: 100%;
+}
+
+.css-all-container ul {
+  list-style: none;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+  height: 7%;
+}
+
+.css-all-container ul li:nth-child(1) {
+  width: 17%;
+  height: 100%;
+}
+
+.css-all-container p {
+  margin-top: 10px;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+}
+
+.css-all-container ul li:nth-child(2) {
+  width: 80%;
+}
+
+.css-all-container input {
+  width: 80%;
+  height: 50px;
+  border-radius: 7px;
+  border: solid 1px gray;
+  padding-left: 10px;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.css-all-container select {
+  width: 80%;
+  height: 50px;
+  border-radius: 7px;
+  border: solid 1px gray;
+  padding-left: 10px;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.import-page-container .submit-import {
+  display: flex;
+  justify-content: center;
+}
+
+#submit-import {
+  margin-top: 10px;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(81, 81, 81);
+  color: white;
+  font-size: 15px;
+}
+
+#submit-import:hover {
+  background-color: gray;
+  cursor: pointer;
+  transform: scale(1.025);
+}
+
+#submit-import:active {
+  transform: scale(1);
+}

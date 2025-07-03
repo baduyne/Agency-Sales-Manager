@@ -1,0 +1,152 @@
+/* Heading của trang báo cáo */
+
+#container #report-content .report-page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-weight: bold;
+  background-color: white;
+  margin: 23px;
+  padding: 20px 0 10px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+#report-content .report-page-header .heading {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 35px;
+  width: 80%;
+}
+
+.report-page-header > div {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.time-create label,
+.type-report {
+  display: flex;
+  flex-direction: row;
+}
+
+.time-create label p,
+.time-create label span,
+.type-report p {
+  font-size: 30px;
+  margin-right: 40px;
+}
+
+.time-create label span {
+  font-weight: lighter;
+}
+
+.type-report select {
+  width: 50%;
+  height: 40px;
+  border-radius: 7px;
+  border: solid 1px gray;
+  padding-left: 10px;
+  margin-left: 25px;
+  font-size: 20px;
+}
+
+.btn-report-page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.type option {
+  font-size: 20px;
+}
+/* ------------------------------- */
+.btn-report-page .btn-report-writing,
+.report-page-content .btn-download {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(81, 81, 81);
+  color: white;
+  font-size: 15px;
+}
+
+.btn-report-page .btn-report-writing:hover,
+.report-page-content .btn-download:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+#report-content .report-page-content {
+  height: auto;
+  min-height: 50%;
+  background-color: white;
+  margin: 25px;
+  padding: 50px 80px 50px 80px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Báo cáo doanh thu */
+.report-page-content .download {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+.report-page-content .download p {
+  height: 40px;
+  padding-top: 20px;
+}
+
+.report-page-content .btn-download {
+  margin-bottom: 50px;
+}
+
+.report-page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(255, 198, 151);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.report-page-content tr th {
+  background-color: rgb(255, 198, 151);
+  border: 1px solid rgb(255, 198, 151);
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.report-page-content td {
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(255, 198, 151);
+  padding: 12px;
+  text-align: center;
+}
+
+.report-page-content table,
+.report-page-content th,
+.report-page-content td {
+  text-align: center;
+  padding: 12px;
+  height: auto;
+}
+
+.report-page-content .revenue-table {
+  margin: 0 auto;
+}
+.report-page-content h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none !important;
+}

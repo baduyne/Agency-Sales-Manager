@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="css/search.css" />
+
+<div id="search-content" class="content-page">
+  {{! Viết thêm vào đây }}
+  <div class="search search-page-header">
+    <ul>
+      <li><p id="title-search">Nhập tên đại lý</p></li>
+      <li>
+        <input
+          type="text"
+          id="search-agent"
+          placeholder="Nhập tên đại lý"
+        /></li>
+      <li><button id="search-button">Tra Cứu</button></li>
+    </ul>
+  </div>
+  <div id="listtable-container">
+    <div class="search-text hidden">
+      <span>Kết quả tra cứu</span>
+    </div>
+    <div id="agent-list"></div>
+  </div>
+  {{!  }}
+  <div class="space"></div>
+</div>
+<script src="js\search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js"></script>

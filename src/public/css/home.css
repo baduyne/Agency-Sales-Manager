@@ -1,0 +1,24 @@
+#home-content .home-page-header {
+  height: 15%;
+  font-size: 55px;
+  font-weight: bold;
+  color: #ff914d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 23px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+#home-content .home-picture {
+  height: calc(100% - 50px);
+  background-image: url("../img/dashboard/poster.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
